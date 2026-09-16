@@ -15,21 +15,6 @@ const LinkedinIcon = () => (
   </svg>
 );
 
-const KaggleIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M22 22h-4.5l-7-10 7-10H22" />
-    <path d="M2 2v20" />
-    <path d="M10 12H2" />
-  </svg>
-);
-
-const NotionIcon = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M3 3h18v18H3z" />
-    <path d="M8 7v10l4-5 4 5V7" />
-  </svg>
-);
-
 const LinkGroup = ({ title, children }) => (
   <div className="flex flex-col gap-2">
     <span className="text-xs font-semibold text-gray-400 uppercase tracking-wider">{title}</span>
@@ -57,25 +42,21 @@ export default function SidebarFooter() {
       
       {/* Section 1: Project Links */}
       <LinkGroup title="About Project">
-        <a href="https://github.com/deveshio/Handscribe" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-600 hover:text-black transition-colors">
+        <a href="https://github.com/NikitaShekhawat3/Hand-Scribe" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-600 hover:text-black transition-colors">
           <GithubIcon />
           <span>Source Code</span>
         </a>
-        <a href="https://deveshio.notion.site/Devesh-Kumar-Suthar-1f353329aa5f80198193f292a4d27ce4?v=29753329aa5f8093a2e5000ce481f005" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-gray-600 hover:text-black transition-colors">
-          <NotionIcon />
-          <span>More Projects</span>
-        </a>
+        
       </LinkGroup>
 
       {/* Section 2: Personal Links */}
       <LinkGroup title="Connect">
-        <SocialLink href="https://www.github.com/deveshio" icon={GithubIcon} label="GitHub Profile" />
-        <SocialLink href="https://www.kaggle.com/deveshsuthar" icon={KaggleIcon} label="Kaggle Profile" />
-        <SocialLink href="https://www.linkedin.com/in/devesh-suthar-" icon={LinkedinIcon} label="LinkedIn Profile" />
+        <SocialLink href="https://github.com/NikitaShekhawat3" icon={GithubIcon} label="GitHub Profile" />
+        <SocialLink href="https://linkedin.com/in/nikitashekhawat3" icon={LinkedinIcon} label="LinkedIn Profile" />
       </LinkGroup>
 
       <div className="text-[10px] text-gray-400 text-center">
-        © 2025 HandScribe
+        © 2026 HandScribe
       </div>
     </div>
   );
